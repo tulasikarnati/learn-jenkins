@@ -23,7 +23,7 @@ pipeline {
             steps {
                 sh """
                     echo ""heello shellscript
-                    env
+                    echo $GREETING
                 """
             }
         }
