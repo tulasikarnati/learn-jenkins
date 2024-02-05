@@ -7,6 +7,9 @@ pipeline {
     environment {
         GREETING = "Good Morning"
     }
+    options {
+        timeout(time: 1, unit: 'SECONDS') 
+    }
     // build
     stages {
         stage('Build') {
@@ -24,6 +27,7 @@ pipeline {
                 sh """
                     echo ""heello shellscript
                     echo $GREETING
+                    sleep 10
                 """
             }
         }
