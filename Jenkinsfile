@@ -39,7 +39,7 @@ pipeline {
                 sh """
                     echo ""heello shellscript
                     echo $GREETING
-                    sleep 10
+                    #sleep 10
                 """
             }
         }
